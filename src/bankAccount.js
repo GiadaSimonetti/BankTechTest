@@ -1,4 +1,7 @@
-(function () {
+// (function () {
    'use strict';
-   // this function is strict...
-}());
+   function BankAccount(){
+     this.initialBalance = 0;
+   }
+
+// }());

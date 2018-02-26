@@ -1,5 +1,4 @@
-alert("BOOOOOOOM")
-(function () {
+// (function () {
    'use strict';
    describe('Feature test', function(){
      var bankAccount;
@@ -8,5 +7,10 @@ alert("BOOOOOOOM")
       bankAccount= new BankAccount();
    });
 
-   })
-}());
+   it('returns the initial balance', function(){
+    expect(bankAccount.initialBalance).toEqual(0);
+  });
+
+
+ });
+// }());
