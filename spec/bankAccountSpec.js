@@ -16,6 +16,12 @@
     expect(bankAccount.currentBalance).toEqual(500);
   });
 
+   it('can make a withdrawal', function(){
+    bankAccount.deposit(500)
+    bankAccount.withdrawal(200)
+    expect(bankAccount.currentBalance).toEqual(300);
+  });
+
 
  });
 // }());

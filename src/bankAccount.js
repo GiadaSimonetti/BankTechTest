@@ -5,8 +5,12 @@
      this.currentBalance = this.initialBalance;
    }
 
-   BankAccount.prototype.deposit = function(money){
-      this.currentBalance += money;
+   BankAccount.prototype.deposit = function(depositedAmount){
+      this.currentBalance += depositedAmount;
+    };
+
+   BankAccount.prototype.withdrawal = function(withdrawalAmount){
+      this.currentBalance -= withdrawalAmount;
     };
 
    // BankAccount.prototype.printAccountStatment = function(money){
