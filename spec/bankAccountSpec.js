@@ -11,6 +11,11 @@
     expect(bankAccount.initialBalance).toEqual(0);
   });
 
+   it('can make a deposit', function(){
+    bankAccount.deposit(500)
+    expect(bankAccount.currentBalance).toEqual(500);
+  });
+
 
  });
 // }());
