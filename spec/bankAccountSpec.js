@@ -34,8 +34,8 @@
   it('can make a deposit', function(){
     bankAccount.deposit(500)
     bankAccount.withdrawal(200)
-    
-    expect(bankAccount.transactions).toContain("26/2/2018 || || 200 || 300");
+
+    expect(bankAccount.transactions).toContain("26/2/2018 ||  || 200 || 300");
   });
 
   //  it('shows the date', function(){
